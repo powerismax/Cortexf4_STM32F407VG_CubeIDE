@@ -1,0 +1,32 @@
+# STM32CubeIDE workspace
+.metadata/
+**/.agents/
+
+# Generated build directories
+**/Debug/
+**/Release/
+
+# Compiler outputs
+*.o
+*.d
+*.su
+*.cyclo
+*.a
+*.elf
+*.hex
+*.bin
+*.map
+*.list
+*.log
+
+# Machine-specific launch configurations
+*.launch
+
+# Local reference materials
+*.pdf
+do zrobienia/
+ćwiczenia all/
+
+# OS files
+Thumbs.db
+.DS_Store
