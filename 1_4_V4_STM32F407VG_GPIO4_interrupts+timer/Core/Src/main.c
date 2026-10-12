@@ -13,6 +13,7 @@
   * in the root directory of this software component.
   * If no LICENSE file comes with this software, it is provided AS-IS.
   *
+  *Obsługa przycisku przez przerwanie EXTI z prostą eliminacją drgań styków
   ******************************************************************************
   */
 /* USER CODE END Header */
