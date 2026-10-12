@@ -2,16 +2,16 @@
 
 ## Project Structure & Module Organization
 
-This workspace contains separate STM32F407VG CubeIDE examples: `STM32F407VG_ADC/` and the `STM32F407VG_GPIO*` projects. Treat each project as an independent firmware target. Application code lives in `Core/Src/`, public headers in `Core/Inc/`, and startup assembly in `Core/Startup/`. `Drivers/` contains CMSIS and STM32 HAL sources; `Middlewares/` and `USB_HOST/` hold generated USB support. The `.ioc` file is the source of truth for CubeMX peripheral configuration. Reference PDFs and images belong in `docs/`, `ćwiczenia all/`, or `do zrobienia/`, not in firmware source directories.
+This workspace contains five independent STM32F407VG CubeIDE examples. The `1_4_V1...V4` directories cover the GPIO exercises from lessons 1-4, while `5_STM32F407VG_ADC/` covers lesson 5. Application code lives in `Core/Src/`, public headers in `Core/Inc/`, and startup assembly in `Core/Startup/`. `Drivers/` contains CMSIS and STM32 HAL sources; `Middlewares/` and `USB_HOST/` hold generated USB support. The `.ioc` file is the source of truth for CubeMX peripheral configuration. Reference PDFs are local training materials and are excluded from Git.
 
 ## Build, Test, and Development Commands
 
 Import the required project into STM32CubeIDE and select **Project > Build Project** for the normal workflow. Generated makefiles also support command-line builds when the Arm GNU toolchain is available:
 
 ```powershell
-make -C STM32F407VG_ADC/Debug all
-make -C STM32F407VG_ADC/Debug clean
-make -C STM32F407VG_GPIO3_interrupts/Debug all
+make -C 5_STM32F407VG_ADC/Debug all
+make -C 5_STM32F407VG_ADC/Debug clean
+make -C 1_4_V3_STM32F407VG_GPIO3_interrupts/Debug all
 ```
 
 Replace the project name as needed. Do not hand-edit generated `Debug/` or `Release/` files; regenerate them through CubeIDE.
